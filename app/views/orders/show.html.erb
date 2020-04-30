@@ -1,12 +1,31 @@
+# The line items in the order and:
+# Their image, name and description
+# Their respective quantities and line item totals
+# The final amount for the order
+# The email that was used
+
 <section class="orders-show">
 
   <header class="page-header">
-    <h1>Order #<%= @order.id %></h1>
+    <h1>Order <%= @order.id %></h1>
   </header>
 
   <div class="order-summary jumbotron">
     <h4>Thank you for your order!</h4>
   </div>
+
+  <div class="card">
+    <div class="card-body">
+      <blockquote class="blockquote mb-0">
+        <p>Your receipt has been sent to <%= @order.email %> with a total of <%= humanized_money_with_symbol @order.total_cents / 100.0 %></p>
+        <footer class="blockquote-footer">Order created at <%= @order.created_at %></footer>
+      </blockquote>
+    </div>
+  </div>
+
+  <% @order_products.each do |order_product| %>
+    <%= render 'order_product', product: order_product[:product], quantity: order_product[:product][:quantity] %>
+  <% end %>
 
   <%= link_to "Continue Shopping", root_path, class: 'btn btn-lg btn-primary' %>
 
