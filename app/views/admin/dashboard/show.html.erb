@@ -1,2 +1,14 @@
-<h1>Admin::Dashboard#show</h1>
-<p>Find me in app/views/admin/dashboard/show.html.erb</p>
+<div class="card">
+  <div class="card-header">
+    Dashboard
+  </div>
+  <div class="card-body">
+  <p class="card-text">Total number of <%= link_to 'products', admin_products_path %>: <%= @product_count %></p>
+  <p class="card-text">Total number of categories: <%= @categories.length %></p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <% @categories.each do |category| %>
+      <li class="list-group-item"><%= link_to category.name, category %></li>
+    <% end %>
+  </ul>
+</div>
