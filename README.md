@@ -25,3 +25,16 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 * Rails 4.2 [Rails Guide](http://guides.rubyonrails.org/v4.2/)
 * PostgreSQL 9.x
 * Stripe
+
+## Testing Dev Lib
+
+* RSpec
+* Capybara
+* Poltergeist
+* Database Cleaner
+
+## ScreenShots
+
+!["Home Page"](https://github.com/headhuntar/junlge-rails/tree/master/docs/homepage.png)
+!["Cart"](https://github.com/headhuntar/junlge-rails/tree/master/docs/cart.png)
+!["Admin"](https://github.com/headhuntar/junlge-rails/tree/master/docs/admin.png)
