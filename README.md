@@ -35,6 +35,6 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 
 ## ScreenShots
 
-!["Home Page"](https://github.com/headhuntar/junlge-rails/tree/master/docs/homepage.png)
-!["Cart"](https://github.com/headhuntar/junlge-rails/tree/master/docs/cart.png)
-!["Admin"](https://github.com/headhuntar/junlge-rails/tree/master/docs/admin.png)
+!["Home Page"](https://github.com/headhuntar/junlge-rails/blob/master/docs/Homepage.png)
+!["Cart"](https://github.com/headhuntar/junlge-rails/blob/master/docs/Cart.png)
+!["Admin"](https://github.com/headhuntar/junlge-rails/blob/master/docs/Admin.png)
