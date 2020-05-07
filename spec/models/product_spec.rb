@@ -5,7 +5,7 @@ RSpec.describe Product, type: :model do
     # validation tests/examples here
     it "is valid with valid attributes" do
       @category = Category.create(name: "games")
-      @product = @category.products.create(name:"Zelda", quantity: 7, price: 13337)
+      @product = @category.products.create(name:"Zelda", quantity: 7, price: 1337)
       expect(@product).to be_valid
     end
 
